@@ -17,4 +17,4 @@ fi
 # Paste your completed oneliner below when it's finished. Be sure to
 # replace any hard-coded URLs with the $URL variable defined above.
 
-
+./throw-shell.sh $(curl $URL 2>/dev/null | sed -e 's/ at /@/g' -e 's/ dot /./g')
